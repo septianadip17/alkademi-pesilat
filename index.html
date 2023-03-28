@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alkademi Pesilat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="#"><img src="img/pesilat-light.png" alt="Logo"></a>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Proses</a></li>
+                <li><a href="#">Persyaratan</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><button>Masuk</button></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <h1>PESILAT 2023</h1>
+            <h1>Pelatihan Vokasi Kilat</h1>
+            <span class="text text-jalan">Gratis</span>
+            <p>Program pembinaan talenta digital bersama <span class="p-biru">Alkademi</span> dan <span
+                    class="p-biru">Amazon
+                    Web
+                    Services</span> (AWS inCommunities) untuk <span class="p-biru">Alumni SMK</span> & <span
+                    class="p-biru">Sekolah Vokasi</span> di
+                <span class="p-biru">Jawa
+                    Barat</span></p><br>
+            <p>* Pendaftaran dibuka sampai dengan <span class="p-biru">31 Maret 2023!</span></p><br>
+            <h4>Sponsored by</h4><br>
+            <img src="img/aws-incommunities.png" alt=""><br><br>
+            <button>Pelajari Lebih</button>
+        </div>
+        <img src="img/pesilat-1.webp" alt="pesilat-1">
+    </div>
+    <script>
+        const text = document.querySelector(".text-jalan");
+
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "Gratis";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "Bersertifikat";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "Kontribusi Nyata";
+            }, 8000); //1s = 1000 milliseconds
+        }
+
+        textLoad();
+        setInterval(textLoad, 12000);
+    </script>
+</body>
+
+</html>
